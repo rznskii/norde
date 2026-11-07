@@ -9,9 +9,7 @@ html {
 }
 
 body {
-  font-family:
-    JetBrains Mono,
-    monospace;
+  font-family: Roboto, sans-serif;
 }
 
 a {
@@ -19,8 +17,19 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .container {
-  width: min(100% - 40px, 1200px);
+  width: min(100% - 40px, 1080px);
   margin-inline: auto;
 }
 
@@ -65,17 +74,13 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
-  font-size: 13px;
+  font-size: 14px;
   color: #d3d3d3;
 }
 
 .navigation__item.nav__button button {
   display: flex;
   align-items: center;
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
 
 .navigation__item.nav__button button img {
@@ -83,11 +88,10 @@ a {
 }
 
 .hero {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .hero__container {
-  max-width: 1080px;
   display: flex;
   align-items: center;
   gap: 60px;
@@ -102,21 +106,21 @@ a {
   letter-spacing: 1px;
   color: #ffffff;
   padding: 10px 0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hero__title {
   padding: 10px 0;
-  font-size: 60px;
+  font-size: 66px;
   line-height: 1.2;
   letter-spacing: -1px;
   font-weight: 600;
-  color: #be8d6e;
+  color: #ebccae;
 }
 
 .hero__description {
   max-width: 300px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
   padding: 10px 0;
   color: #ffffff;
@@ -142,4 +146,105 @@ a {
 
 .hero__button:hover img {
   transform: translateX(6px);
+}
+
+.collections {
+  margin-top: 130px;
+  padding: 50px;
+}
+
+.collections__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collections__header {
+  max-width: 250px;
+}
+
+.collections__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.collections__subtitle {
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #383838;
+  line-height: 1.4;
+}
+
+.collections__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 0 3px 0;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+}
+
+.collections__link img {
+  width: 15px;
+}
+
+.collections__list li {
+  display: flex;
+  gap: 30px;
+}
+
+.collections__card {
+  border-radius: 30px;
+}
+
+.collections__card:hover .card__info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.collections__card img {
+  position: relative;
+  z-index: 1;
+  height: 230px;
+  width: 170px;
+  border-radius: 30px;
+}
+
+.card__info {
+  position: absolute;
+  z-index: 2;
+  margin-top: -105px;
+  width: 170px;
+  padding: 15px 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0px 70px 25px 25px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.card__title {
+  font-size: 14px;
+}
+
+.card__description {
+  max-width: 100px;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.card__info img {
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  bottom: 17px;
+  width: 18px;
+  height: 18px;
 }
