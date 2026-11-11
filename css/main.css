@@ -338,6 +338,7 @@ button {
   background-color: rgba(32, 21, 12, 0.7);
   padding: 6px 6px 6px 6px;
   border-radius: 20px;
+  overflow: hidden;
 }
 .popular-products__card-title {
   padding: 5px 0 0 5px;
@@ -377,12 +378,19 @@ button {
   height: 28px;
   padding: 4px;
 }
+.popular-products__card:hover .popular-products__image, .popular-products__card:focus-within .popular-products__image {
+  transform: scale(1.1);
+}
+.popular-products__image-wrapper {
+  overflow: hidden;
+  border-radius: 15px;
+}
 .popular-products__image {
   display: block;
   width: 150px;
   height: 150px;
-  border-radius: 15px;
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 /*# sourceMappingURL=main.css.map */

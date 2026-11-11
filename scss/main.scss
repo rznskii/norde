@@ -344,6 +344,7 @@ button {
     background-color: rgb(32, 21, 12, 0.7);
     padding: 6px 6px 6px 6px;
     border-radius: 20px;
+    overflow: hidden;
 
     &-title {
       padding: 5px 0 0 5px;
@@ -389,11 +390,21 @@ button {
     }
   }
 
+  &__card:hover &__image,
+  &__card:focus-within &__image {
+    transform: scale(1.1);
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
   &__image {
     display: block;
     width: 150px;
     height: 150px;
-    border-radius: 15px;
     object-fit: cover;
+    transition: transform 0.4s ease;
   }
 }
