@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "sass": "^1.108.2"
+  },
+  "name": "norde",
+  "version": "1.0.0",
+  "description": "Scandinavian-inspired home decor store.",
+  "main": "index.js",
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.10",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.7",
+    "readdirp": "^5.1.1",
+    "source-map-js": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rznskii/norde.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rznskii/norde/issues"
+  },
+  "homepage": "https://github.com/rznskii/norde#readme"
+}
