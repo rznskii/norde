@@ -316,7 +316,8 @@ button {
 }
 .popular-products__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 72px;
 }
 .popular-products__header {
   max-width: 300px;
@@ -330,15 +331,14 @@ button {
 }
 .popular-products__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .popular-products__card {
   position: relative;
-  z-index: 1;
   background-color: rgba(32, 21, 12, 0.7);
-  padding: 6px 6px 6px 6px;
+  padding: 6px;
   border-radius: 20px;
-  overflow: hidden;
 }
 .popular-products__card-title {
   padding: 5px 0 0 5px;
