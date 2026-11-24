@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
       content="NORDE — интернет-магазин скандинавского декора и предметов интерьера"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>NORDE</title>
   </head>
   <body>
@@ -33,24 +34,56 @@
             </li>
           </ul>
           <ul class="navigation__list">
-            <li class="navigation__item nav__button">
-              <button type="button" class="button__search">
-                <img src="/images/header/png/search.png" alt="Поиск" />
+            <li class="navigation__item navigation__item--button">
+              <button
+                type="button"
+                class="button__search"
+                aria-label="Открыть поиск"
+              >
+                <img
+                  src="/images/header/png/search.png"
+                  alt=""
+                  aria-hidden="true"
+                />
               </button>
             </li>
-            <li class="navigation__item nav__button">
-              <button type="button" class="button__auth">
-                <img src="/images/header/png/auth.png" alt="Войти" />
+            <li class="navigation__item navigation__item--button">
+              <button
+                type="button"
+                class="button__auth"
+                aria-label="Авторизоваться"
+              >
+                <img
+                  src="/images/header/png/auth.png"
+                  alt=""
+                  aria-hidden="true"
+                />
               </button>
             </li>
-            <li class="navigation__item nav__button">
-              <button type="button" class="button__favorite">
-                <img src="/images/header/png/favorite.png" alt="Избранное" />
+            <li class="navigation__item navigation__item--button">
+              <button
+                type="button"
+                class="button__favorite"
+                aria-label="Открыть избранное"
+              >
+                <img
+                  src="/images/header/png/favorite.png"
+                  alt=""
+                  aria-hidden="true"
+                />
               </button>
             </li>
-            <li class="navigation__item nav__button">
-              <button type="button" class="button__cart">
-                <img src="/images/header/png/cart.png" alt="Корзина" />
+            <li class="navigation__item navigation__item--button">
+              <button
+                type="button"
+                class="button__cart"
+                aria-label="Открыть корзину"
+              >
+                <img
+                  src="/images/header/png/cart.png"
+                  alt=""
+                  aria-hidden="true"
+                />
               </button>
             </li>
           </ul>
@@ -75,7 +108,7 @@
               Подберем вещи, которые создают настроение и делают каждый день
               уютнее.
             </p>
-            <a href="#catalog" class="hero__link button__link">
+            <a href="/catalog" class="hero__link button__link">
               Смотреть каталог
               <img
                 src="/images/header/png/arrow-white.png"
@@ -113,7 +146,7 @@
                 <a href="/catalog" class="categories__card-link">
                   <img
                     src="/images/wallpaper/lamp.jpg"
-                    alt="Освещение"
+                    alt=""
                     class="categories__image"
                     decoding="async"
                   />
@@ -136,7 +169,7 @@
                 <a href="/catalog" class="categories__card-link">
                   <img
                     src="/images/wallpaper/plant.jpg"
-                    alt="Растения"
+                    alt=""
                     class="categories__image"
                     decoding="async"
                   />
@@ -159,7 +192,7 @@
                 <a href="/catalog" class="categories__card-link">
                   <img
                     src="/images/wallpaper/decor.jpg"
-                    alt="Декор"
+                    alt=""
                     class="categories__image"
                     decoding="async"
                   />
@@ -182,7 +215,7 @@
                 <a href="/catalog" class="categories__card-link">
                   <img
                     src="/images/wallpaper/textile.jpg"
-                    alt="Текстиль"
+                    alt=""
                     class="categories__image"
                     decoding="async"
                   />
@@ -203,6 +236,7 @@
           </ul>
         </div>
       </section>
+
       <section class="solutions">
         <div class="container solutions__container">
           <div class="solutions__header">
@@ -285,216 +319,9 @@
           </ul>
         </div>
       </section>
+
       <section class="popular-products">
         <div class="container popular-products__container">
-          <ul class="popular-products__list">
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/lamp.jpg"
-                      alt="Освещение"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Лампа French</h3>
-                  <p class="popular-products__card-category">Освещение</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">2300₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить Лампу French в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/decor.jpg"
-                      alt="Декор"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Ваза Moriarti</h3>
-                  <p class="popular-products__card-category">Декор</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">14270₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить Вазу Moriarti в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/textile.jpg"
-                      alt="Текстиль"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Постельное Bloom</h3>
-                  <p class="popular-products__card-category">Текстиль</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">7490₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить постельное Bloom в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/plant.jpg"
-                      alt="Растения"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Фикус Бенджамина</h3>
-                  <p class="popular-products__card-category">Растения</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">2300 ₽</p>
-
-                  <button
-                    type="button"
-                    class="popular-products__card-button"
-                    aria-label="Добавить Фикус Бенджамина в корзину"
-                  >
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/decor.jpg"
-                      alt="Декор"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Ваза Moriarti</h3>
-                  <p class="popular-products__card-category">Декор</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">14270₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить Вазу Moriarti в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/lamp.jpg"
-                      alt="Освещение"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Лампа French</h3>
-                  <p class="popular-products__card-category">Освещение</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">2300₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить Лампу French в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/textile.jpg"
-                      alt="Текстиль"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Постельное Bloom</h3>
-                  <p class="popular-products__card-category">Текстиль</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">7490₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить постельное Bloom в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="popular-products__item">
-              <article class="popular-products__card">
-                <a href="/catalog" class="popular-products__card-link">
-                  <div class="popular-products__image-wrapper">
-                    <img
-                      src="/images/wallpaper/decor.jpg"
-                      alt="Декор"
-                      class="popular-products__image"
-                      decoding="async"
-                    />
-                  </div>
-                  <h3 class="popular-products__card-title">Ваза Moriarti</h3>
-                  <p class="popular-products__card-category">Декор</p>
-                </a>
-                <div class="popular-products__card-price-to-cart">
-                  <p class="popular-products__card-price">14270₽</p>
-                  <button type="button" class="popular-products__card-button">
-                    <img
-                      src="/images/icons/popular/addToCart.png"
-                      alt="Добавить Вазу Moriarti в корзину"
-                    />
-                  </button>
-                </div>
-              </article>
-            </li>
-          </ul>
           <div class="popular-products__header">
             <p class="popular-products__subtitle subtitle">ПОПУЛЯРНОЕ</p>
             <h2 class="popular-products__title title">
@@ -514,8 +341,119 @@
               />
             </a>
           </div>
+          <ul class="popular-products__list">
+            <li class="popular-products__item">
+              <article class="popular-products__card">
+                <a href="/catalog" class="popular-products__card-link">
+                  <div class="popular-products__image-wrapper">
+                    <img
+                      src="/images/wallpaper/lamp.jpg"
+                      alt="Лампа French"
+                      class="popular-products__image"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3 class="popular-products__card-title">Лампа French</h3>
+                  <p class="popular-products__card-category">Освещение</p>
+                </a>
+                <div class="popular-products__card-price-to-cart">
+                  <p class="popular-products__card-price">2300₽</p>
+                  <button
+                    type="button"
+                    class="popular-products__card-button"
+                    aria-label="Добавить Лампу French в корзину"
+                  >
+                    <img src="/images/icons/popular/addToCart.png" />
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="popular-products__item">
+              <article class="popular-products__card">
+                <a href="/catalog" class="popular-products__card-link">
+                  <div class="popular-products__image-wrapper">
+                    <img
+                      src="/images/wallpaper/decor.jpg"
+                      alt="Ваза Moriarti"
+                      class="popular-products__image"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3 class="popular-products__card-title">Ваза Moriarti</h3>
+                  <p class="popular-products__card-category">Декор</p>
+                </a>
+                <div class="popular-products__card-price-to-cart">
+                  <p class="popular-products__card-price">14270₽</p>
+                  <button
+                    type="button"
+                    class="popular-products__card-button"
+                    aria-label="Добавить Вазу Moriarti в корзину"
+                  >
+                    <img src="/images/icons/popular/addToCart.png" />
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="popular-products__item">
+              <article class="popular-products__card">
+                <a href="/catalog" class="popular-products__card-link">
+                  <div class="popular-products__image-wrapper">
+                    <img
+                      src="/images/wallpaper/textile.jpg"
+                      alt="Постельное Bloom"
+                      class="popular-products__image"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3 class="popular-products__card-title">Постельное Bloom</h3>
+                  <p class="popular-products__card-category">Текстиль</p>
+                </a>
+                <div class="popular-products__card-price-to-cart">
+                  <p class="popular-products__card-price">7490₽</p>
+                  <button
+                    type="button"
+                    class="popular-products__card-button"
+                    aria-label="Добавить постельное Bloom в корзину"
+                  >
+                    <img src="/images/icons/popular/addToCart.png" />
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="popular-products__item">
+              <article class="popular-products__card">
+                <a href="/catalog" class="popular-products__card-link">
+                  <div class="popular-products__image-wrapper">
+                    <img
+                      src="/images/wallpaper/plant.jpg"
+                      alt="Фикус Бенджамина"
+                      class="popular-products__image"
+                      decoding="async"
+                    />
+                  </div>
+                  <h3 class="popular-products__card-title">Фикус Бенджамина</h3>
+                  <p class="popular-products__card-category">Растения</p>
+                </a>
+                <div class="popular-products__card-price-to-cart">
+                  <p class="popular-products__card-price">2300 ₽</p>
+
+                  <button
+                    type="button"
+                    class="popular-products__card-button"
+                    aria-label="Добавить Фикус Бенджамина в корзину"
+                  >
+                    <img
+                      src="/images/icons/popular/addToCart.png"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
+
       <section class="about">
         <div class="container about__container">
           <div class="about__header">
@@ -549,7 +487,7 @@
           </div>
           <div class="about__image-wrapper">
             <img
-              src="/images/about/about.jpg"
+              src="/images/main/about/about.jpg"
               alt="Интерьер в скандинавском стиле с натуральными материалами"
               decoding="async"
               class="about__image"
@@ -557,6 +495,7 @@
           </div>
         </div>
       </section>
+
       <section class="advantages">
         <div class="container advantages__container">
           <div class="advantages__header">
@@ -567,14 +506,14 @@
           </div>
           <div class="advantages__content">
             <img
-              src="/images/advantages/advantages.jpg"
+              src="/images/main/advantages/advantages.jpg"
               alt="Светлая комната в дизайнерском оформлении"
               decoding="async"
               class="advantages__image"
             />
             <div class="advantages__info">
               <ul class="advantages__info-list">
-                <li class="advantages__info-link">
+                <li class="advantages__info-item">
                   <article class="advantages__info-card">
                     <h3 class="advantages__info-title">Продуманный выбор</h3>
                     <p class="advantages__info-description">
@@ -583,7 +522,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="advantages__info-link">
+                <li class="advantages__info-item">
                   <article class="advantages__info-card">
                     <h3 class="advantages__info-title">
                       Натуральные материалы
@@ -594,7 +533,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="advantages__info-link">
+                <li class="advantages__info-item">
                   <article class="advantages__info-card">
                     <h3 class="advantages__info-title">Гармония в деталях</h3>
                     <p class="advantages__info-description">
@@ -603,7 +542,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="advantages__info-link">
+                <li class="advantages__info-item">
                   <article class="advantages__info-card">
                     <h3 class="advantages__info-title">Забота о заказе</h3>
                     <p class="advantages__info-description">
@@ -612,7 +551,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="advantages__info-link">
+                <li class="advantages__info-item">
                   <article class="advantages__info-card">
                     <h3 class="advantages__info-title">Удобный выбор</h3>
                     <p class="advantages__info-description">
@@ -628,6 +567,76 @@
           </div>
         </div>
       </section>
+
+      <section class="newsletter">
+        <div class="container newsletter__container">
+          <div class="newsletter__content">
+            <p class="newsletter__subtitle subtitle">БУДЬТЕ В КУРСЕ</p>
+            <h2 class="newsletter__title title">
+              Вдохновение начинается с деталей
+            </h2>
+            <p class="newsletter__description">
+              Подпишитесь на нашу рассылку, чтобы первыми узнавать о новых
+              коллекциях, интересных находках и идеях для вашего пространства.
+            </p>
+
+            <form action="#" method="POST">
+              <label for="newsletter-email">Ваш e-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="newsletter-email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required
+              />
+              <label class="newsletter__consent">
+                <input type="checkbox" name="consent" value="yes" required />
+                <span>Согласен(на) получать новости и предложения.</span>
+              </label>
+              <button type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <a class="footer__logo" href="/">NORDE</a>
+          <p class="footer__description">
+            Предметы интерьера и идеи для гармоничного пространства.
+          </p>
+        </div>
+
+        <nav class="footer__navigation" aria-label="Навигация в подвале">
+          <div class="footer__navigation-group">
+            <h2 class="footer__heading">Покупателям</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="/catalog" class="footer__link">Каталог</a>
+              </li>
+              <li class="footer__item">
+                <a href="/collections" class="footer__link">Коллекции</a>
+              </li>
+              <li class="footer__item">
+                <a href="/solutions" class="footer__link">Решения</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation-group">
+            <h2 class="footer__heading">О NORDE</h2>
+            <ul class="footer__list">
+              <li><a href="/about">О нас</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="footer__bottom">
+          <p>&copy; 2026 NORDE</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
