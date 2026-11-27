@@ -166,7 +166,7 @@ input:focus-visible {
 
 .hero__title {
   padding: 10px 0;
-  font-size: 70px;
+  font-size: clamp(38px, 9vw, 70px);
   line-height: 1.2;
   letter-spacing: -1px;
   font-weight: 200;
@@ -190,6 +190,7 @@ input:focus-visible {
 .categories__container {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .categories__header {
@@ -360,6 +361,9 @@ input:focus-visible {
       padding: 5px 0 0 5px;
       font-size: 14px;
       color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &-category {

@@ -1,3 +1,29 @@
+@media (max-width: 1024px) {
+  .header > img {
+    height: 600px;
+  }
+  .hero__title {
+    font-size: clamp(38px, 7vw, 70px);
+  }
+  .hero__description {
+    font-size: 20px;
+  }
+  .about__header {
+    max-width: 400px;
+  }
+  .about__accent {
+    font-size: clamp(20px, 3vw, 47px);
+  }
+  .about__image-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero__description {
+    font-size: 18px;
+    max-width: 450px;
+  }
+}
 @media (max-width: 900px) {
   .header .container {
     max-width: min(100% - 32px, 700px);
@@ -47,17 +73,6 @@
     height: auto;
     aspect-ratio: 1;
   }
-  .about__container {
-    flex-direction: column;
-  }
-  .about__image-wrapper {
-    width: 100%;
-    max-width: none;
-    aspect-ratio: 4/3;
-  }
-  .about__image {
-    height: 100%;
-  }
   .advantages__content {
     flex-direction: column;
     gap: 28px;
@@ -78,6 +93,9 @@
     gap: 14px;
     padding: 12px 16px;
   }
+  .header > img {
+    height: 530px;
+  }
   .navigation {
     width: 100%;
     flex-wrap: wrap;
@@ -92,11 +110,9 @@
   .hero {
     margin-top: 40px;
   }
-  .hero__title {
-    font-size: clamp(38px, 9vw, 56px);
-  }
   .hero__description {
-    font-size: 18px;
+    font-size: 17px;
+    max-width: 350px;
   }
   .categories {
     margin-top: 72px;
@@ -133,12 +149,20 @@
   .about {
     padding: 36px 0;
   }
+  .about__container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about__header {
+    max-width: 500px;
+    text-align: center;
+  }
   .about__title {
-    font-size: clamp(30px, 7vw, 40px);
+    font-size: clamp(30px, 5vw, 40px);
   }
   .about__accent {
     padding: 20px 0;
-    font-size: clamp(28px, 7vw, 40px);
+    font-size: clamp(20px, 5vw, 47px);
   }
   .advantages {
     padding: 36px 0;
@@ -163,7 +187,7 @@
   .newsletter {
     padding: 56px 0;
   }
-  .newsletter__content--title {
+  .newsletter__title {
     font-size: clamp(32px, 8vw, 48px);
   }
   .newsletter__content form {
@@ -197,8 +221,19 @@
   .solutions__image {
     height: 230px;
   }
-  .newsletter__content--title {
+  .newsletter__title {
     font-size: 32px;
+  }
+}
+@media (max-width: 360px) {
+  .header > img {
+    height: 660px;
+  }
+  .hero__content {
+    text-align: center;
+  }
+  .hero__title {
+    font-size: clamp(38px, 15vw, 70px);
   }
 }
 
